@@ -5,6 +5,8 @@ import "./App.css";
 
 import Header from "./components/Header";
 import Transition from "./components/Transition";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 function App() {
   const [transition, setTransition] = useState({
@@ -38,12 +40,15 @@ function App() {
 
   return (
     <TransitionContext.Provider value={transition}>
-      <div className="App">
+      <div className="App" style={{ position: "relative", minHeight: "100vh" }}>
         {transition.inProgress && <Transition />}
-        <Routes>
-          <Route path="/" element={<Header />} />
-          <Route path="/hello" element={<Header />} />
-        </Routes>
+        <Header />
+        <div style={{ marginTop: "5rem" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
     </TransitionContext.Provider>
   );
