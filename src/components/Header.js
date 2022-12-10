@@ -11,6 +11,9 @@ export default function Header() {
   function toggleShow() {
     setShow((state) => (state ? false : true));
   }
+  function hide() {
+    setShow(false);
+  }
 
   return (
     <div className="header">
@@ -51,7 +54,7 @@ export default function Header() {
             <p>ABOUT US</p>
           </div>
           {subNav === 1 && (
-            <div className="header-nav-sub" onClick={toggleShow}>
+            <div className="header-nav-sub" onClick={hide}>
               <LinkTr path="/hello">
                 <h5>社團介紹</h5>
                 <p>Our Club</p>
@@ -73,7 +76,7 @@ export default function Header() {
             <p>EVENTS</p>
           </div>
           {subNav === 2 && (
-            <div className="header-nav-sub" onClick={toggleShow}>
+            <div className="header-nav-sub" onClick={hide}>
               <LinkTr>
                 <h5>年展</h5>
                 <p>Expo</p>
@@ -83,8 +86,8 @@ export default function Header() {
                 <p>TEDx</p>
               </LinkTr>
               <LinkTr>
-                <h5>其他</h5>
-                <p>Other</p>
+                <h5>列表</h5>
+                <p>All Events</p>
               </LinkTr>
             </div>
           )}
@@ -99,7 +102,7 @@ export default function Header() {
             <p>ARTICLES</p>
           </div>
           {subNav === 3 && (
-            <div className="header-nav-sub" onClick={toggleShow}>
+            <div className="header-nav-sub" onClick={hide}>
               <LinkTr>
                 <h5>部落格</h5>
                 <p>Blog</p>
@@ -112,12 +115,8 @@ export default function Header() {
           )}
         </li>
         <li className="header-nav-item">
-          <div onClick={toggleShow}>
-            <LinkTr
-              className="header-nav-main"
-              style={{ transform: "none" }}
-              onClick={toggleShow}
-            >
+          <div onClick={hide}>
+            <LinkTr className="header-nav-main" style={{ transform: "none" }}>
               <h4>合作夥伴</h4>
               <p>PARTNERS</p>
             </LinkTr>
