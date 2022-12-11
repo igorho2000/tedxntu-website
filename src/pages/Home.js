@@ -25,9 +25,18 @@ export default function Home() {
 
   return (
     <div>
-      <div className="home-banner">
-        <img src="../home/banner.png" alt="home banner" />
-      </div>
+      <div
+        className="home-banner"
+        style={{
+          height: "800px",
+          width: "100%",
+          overflow: "clip",
+          backgroundImage: 'url("../home/banner.png")',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
       <div className="home-event">
         <LinkTr className="home-event-card">
           <img src="./home/main.png" alt="main event" />
