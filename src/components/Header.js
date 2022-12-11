@@ -81,7 +81,7 @@ export default function Header() {
                 <h5>年展</h5>
                 <p>Expo</p>
               </LinkTr>
-              <LinkTr>
+              <LinkTr path="/event/tedx-6th">
                 <h5>年會</h5>
                 <p>TEDx</p>
               </LinkTr>

@@ -47,7 +47,7 @@ function App() {
         <div style={{ marginTop: "5rem" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/event" element={<Event />} />
+            <Route path="/event/tedx-6th" element={<Event />} />
           </Routes>
         </div>
         <Footer />
