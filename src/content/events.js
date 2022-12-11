@@ -1,0 +1,70 @@
+export const seven = [
+  {
+    path: "exhibition-7th",
+    basic: {
+      type: "expo",
+      name: "吾敘Störung",
+      banner: "7th-expo-banner.jpg",
+      startDate: "Nov 30, 2022 15:00:00",
+      dateRange: "2022/11/30 ~ 2022/12/4",
+      time: "10:00-18:00",
+      location: "台灣大學學生活動中心B1",
+      button: null,
+    },
+    description: [
+      "自吾之口，敘世界",
+      "世界之始，在盤古開天、上帝創世之前，混沌而無章的世界，意外的，在寧靜的平衡之中沈睡數十個世紀",
+      "民智初開，朝氣蓬勃的人們驚天破地的建立起文明、制度",
+      "秩序橫跨在歷史的河流，像救命之木，以基石之姿，承載起社會的運行",
+      "吾敘，那夢中自由的無序",
+      "曾經的秩序如同枷鎖，將人們綁縛在那條大河，載浮載沉，時而奮起爭扎",
+      "可惜色彩鮮豔的小船終將燃盡熱情，任由秩序的浪潮沖刷著斑駁的自己",
+      "吾敘，那個傳說中的天堂",
+      "聽說那裡只有無盡的寧靜祥和",
+      "不必燃燒，無須掙扎",
+      "",
+      "This is a story of “Störung”, or chaos.",
+      "At the beginning of time, there was nothing but different substances floating around in empty Space, maintaining a perfect and peaceful balance. The“Bigbang” broke the balance, creating the universe and subsequently our world. ",
+      "Civilization soon began, and with that came the erection of order. Our ancestors created massive pillars of order that profoundly influenced human societies for thousands of years.",
+      "However, we have grown discontent with simply following orders set millennia ago.",
+      "We dream of freedom, free from the shadow of the massive pillars of order. Where people are no longer burdened by conventions and chained by countless rules.",
+      "We wonder about heaven. Where there is rumored to be infinite peace and calm.",
+    ],
+    info: [
+      "年展主題｜吾敘Störung",
+      "年展日期｜11/30-12/3 10:00-18:00；12/4 10:00-16:00",
+      "年展地點 | 台灣大學學生活動中心B1 免費入場",
+    ],
+    guestlist: null,
+    sponsorlist: null,
+  },
+];
+
+export const six = [
+  {
+    path: "tedx-6th",
+    basic: {
+      type: "tedx",
+      name: "理想麻醉 Dream Paralysis",
+      banner: "6th-tedx-banner.jpg",
+      startDate: "May 15, 2022 15:00:00",
+      dateRange: "2022/5/15",
+      time: "13:00 ~ 16:00",
+      location: "台灣大學 梁國樹國際會議廳",
+      button: ["立即購票", "https://www.accupass.com/go/6thtedxntu"],
+    },
+    description: [
+      "麻醉就像一場霧，霧中的我們不斷掙扎於現實與理想間，痛並快樂著。",
+      "我終於走進由華燈交織、五光十色的大城，像是來到了全新的世界。夜晚的降臨不但沒有帶來黑暗和恐懼，而是使其更加絢爛，令人心醉神搖。",
+      "迷離的燈火中，每一扇門的後面似乎都藏著新奇的事物，等著我去發現、去探索，然而在這些華麗的大門之前，卻又透著令人緊張的氣氛。門邊街上的遊人來來去去，有的躊躇滿志、有的垂頭喪氣、還有的不停的在門前徘徊，人人心中都懷著期待和不安。門前的人們看起來是如此渺小，似乎被這氣勢萬鈞的城市壓得喘不過氣來。",
+      "大街上，看著街邊的櫥窗擺滿了美所設計而成的物件，人們來去、偶而駐足賞之，好似城市裡每個人無時不刻被評論的象徵；路口處，巨型LED燈板上輪番播放著外交和政治新聞，穿插著商業所構築對未來的美好想像，是城市的脈搏，每閃一下都牽動著人的命運和心情；廣場上的歌手吟唱著自己的過往傷痛和迎向未來的勇氣，溫暖的歌聲治癒著人們；走到馬路邊，車子呼嘯而過，紅綠燈和感應式的街燈隨著煞車聲亮起，為黑暗的街道亮起了一盞盞明燈。",
+      "嘈雜而燦爛的世界，我們像身在由華燈構成的霧中，陷落於理想卻又像魚般被迫拉扯回現實，掙扎自我認同時牽動傷口鮮血淋漓卻又麻痺於理想，痛並快樂著。",
+    ],
+    info: [
+      "時間 | 5/15 (日) 13:00 - 16:00 (12:30 寄送連結)",
+      "地點 | 台灣大學社會科學院 梁國樹國際會議廳",
+    ],
+    guestlist: ["張倞菱", "陳昱築", "王淳", "黃暐程", "劉致昕", "潘瑋翔"],
+    sponsorlist: null,
+  },
+];

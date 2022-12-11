@@ -1,6 +1,51 @@
 .event {
   margin: 2rem 0;
 }
+.event-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(237, 237, 237);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 5px rgb(200, 200, 200);
+  margin-bottom: 2rem;
+  height: fit-content;
+}
+.event-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.event-info h4 {
+  font-size: 1.2rem;
+}
+.event-info p {
+  margin-bottom: 0.3rem;
+}
+.event-info h5 {
+  font-size: 1.2rem;
+  color: #8f0018;
+  margin-bottom: 0.3rem;
+}
+.event-info button {
+  width: 70%;
+  height: 3rem;
+  font-size: 1.5rem;
+  margin: 1rem 0 0;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(158, 158, 158);
+  color: white;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.event-info button:hover {
+  background-color: #eb0028;
+  box-shadow: 0px 2px 5px rgb(200, 200, 200);
+}
+.event-info a {
+  color: white;
+  font-weight: 600;
+}
 
 @media only screen and (min-width: 768px) {
   .event {

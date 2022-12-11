@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Event from "./pages/Event";
 
+import { six, seven } from "./content/events";
+
 function App() {
   const [transition, setTransition] = useState({
     inProgress: true,
@@ -47,7 +49,18 @@ function App() {
         <div style={{ marginTop: "5rem" }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/event/tedx-6th" element={<Event />} />
+            {six.map((event) => (
+              <Route
+                path={`/event/${event.path}`}
+                element={<Event content={event} />}
+              />
+            ))}
+            {seven.map((event) => (
+              <Route
+                path={`/event/${event.path}`}
+                element={<Event content={event} />}
+              />
+            ))}
           </Routes>
         </div>
         <Footer />

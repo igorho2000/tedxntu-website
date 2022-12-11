@@ -43,18 +43,23 @@ h1 {
 .typetag span {
   font-size: 1.2rem;
 }
-.guestlist {
+.guestlist,
+.sponsorlist {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
   margin-top: 1rem;
 }
-.guestlist p {
+.guestlist p,
+.sponsorlist p {
   text-align: center;
 }
 .guestlist img {
   border-radius: 50%;
+  width: 100%;
+}
+.sponsorlist img {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
@@ -65,7 +70,8 @@ h1 {
   .pagebanner {
     margin-bottom: 0;
   }
-  .guestlist {
+  .guestlist,
+  .sponsorlist {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
