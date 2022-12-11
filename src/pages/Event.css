@@ -1,0 +1,12 @@
+.event {
+  margin: 2rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .event {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
