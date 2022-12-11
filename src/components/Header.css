@@ -163,10 +163,10 @@
   right: 1rem;
   animation: appear 0.3s linear 0.3s;
   animation-fill-mode: forwards;
+  pointer-events: none;
 }
 .header-nav-sub a {
   margin: 0 0 0 1rem;
-  pointer-events: inherit;
 }
 .header-nav-sub h5 {
   font-size: 1.2rem;
