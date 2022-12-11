@@ -77,11 +77,11 @@ export default function Header() {
           </div>
           {subNav === 2 && (
             <div className="header-nav-sub" onClick={hide}>
-              <LinkTr>
+              <LinkTr path="/event/exhibition-7th">
                 <h5>年展</h5>
                 <p>Expo</p>
               </LinkTr>
-              <LinkTr>
+              <LinkTr path="/event/tedx-6th">
                 <h5>年會</h5>
                 <p>TEDx</p>
               </LinkTr>
@@ -107,10 +107,14 @@ export default function Header() {
                 <h5>部落格</h5>
                 <p>Blog</p>
               </LinkTr>
-              <LinkTr>
+              <a
+                href="https://www.youtube.com/channel/UCnGHTt5PZOmUTJCPvWAS-GQ"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <h5>過往演講</h5>
                 <p>Speeches</p>
-              </LinkTr>
+              </a>
             </div>
           )}
         </li>

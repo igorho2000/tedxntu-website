@@ -19,7 +19,6 @@ export function countdown(time) {
 
 export function transcribeCount(array) {
   const result =
-    "剩餘：" +
     array[0].toString() +
     "天" +
     array[1].toString() +

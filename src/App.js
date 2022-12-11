@@ -7,6 +7,9 @@ import Header from "./components/Header";
 import Transition from "./components/Transition";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Event from "./pages/Event";
+
+import { six, seven } from "./content/events";
 
 function App() {
   const [transition, setTransition] = useState({
@@ -40,12 +43,24 @@ function App() {
 
   return (
     <TransitionContext.Provider value={transition}>
-      <div className="App" style={{ position: "relative", minHeight: "100vh" }}>
+      <div className="App">
         {transition.inProgress && <Transition />}
         <Header />
         <div style={{ marginTop: "5rem" }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            {six.map((event) => (
+              <Route
+                path={`/event/${event.path}`}
+                element={<Event content={event} />}
+              />
+            ))}
+            {seven.map((event) => (
+              <Route
+                path={`/event/${event.path}`}
+                element={<Event content={event} />}
+              />
+            ))}
           </Routes>
         </div>
         <Footer />

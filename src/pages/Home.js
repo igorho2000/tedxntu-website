@@ -38,12 +38,12 @@ export default function Home() {
         }}
       ></div>
       <div className="home-event">
-        <LinkTr className="home-event-card">
+        <LinkTr className="home-event-card" path="/event/exhibition-7th">
           <img src="./home/main.png" alt="main event" />
           <div className="home-event-info">
             <h2>檔期主打活動</h2>
             <h3>年展：吾敘 Störung</h3>
-            <p>11/30/2022 - 12/3/2022</p>
+            <p style={{ textAlign: "center" }}>11/30/2022 - 12/3/2022</p>
             <h4>
               {count.main === null
                 ? "活動已過，敬請期待下次"
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
         <div className="home-nav-item" style={{ backgroundColor: "#2c8484" }}>
           <img src="../home/expo.jpg" alt="tedx exhibition" />
-          <LinkTr className="home-nav-info">
+          <LinkTr className="home-nav-info" path="/event/exhibition-7th">
             <span class="material-icons">museum</span>
             <p>沉浸於我們的</p>
             <h3>精緻年展</h3>
@@ -79,7 +79,7 @@ export default function Home() {
           <div className="home-nav-arrow"></div>
         </div>
         <div className="home-nav-item" style={{ backgroundColor: "#940c04" }}>
-          <LinkTr className="home-nav-info">
+          <LinkTr className="home-nav-info" path="/event/tedx-6th">
             <span class="material-icons">mic_external_on</span>
             <p>邀請您來參與</p>
             <h3>精彩年會</h3>
@@ -89,11 +89,16 @@ export default function Home() {
         </div>
         <div className="home-nav-item" style={{ backgroundColor: "#f38556" }}>
           <img src="../home/speaker.jpg" alt="more videos" />
-          <LinkTr className="home-nav-info">
+          <a
+            className="home-nav-info"
+            href="https://www.youtube.com/channel/UCnGHTt5PZOmUTJCPvWAS-GQ"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span class="material-icons">ondemand_video</span>
             <p>一同探索更多</p>
             <h3>優質演講</h3>
-          </LinkTr>
+          </a>
           <div className="home-nav-arrow"></div>
         </div>
       </div>

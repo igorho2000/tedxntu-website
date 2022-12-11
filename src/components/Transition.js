@@ -7,7 +7,7 @@ export default function Transition() {
       className="transition"
       style={{ animation: "disappear 0.3s linear 2s forwards" }}
     >
-      <img src="./nav/no-dot.png" alt="transition logo" />
+      <img src="../nav/no-dot.png" alt="transition logo" />
       <span></span>
     </div>
   );
