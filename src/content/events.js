@@ -4,6 +4,8 @@ export const seven = [
     basic: {
       type: "expo",
       name: "吾敘Störung",
+      tag: "吾敘，那個傳說中的天堂，聽說那裡只有無盡的寧靜祥和，不必燃燒，無須掙扎。",
+      square: "7th-expo-square.jpg",
       banner: "7th-expo-banner.jpg",
       startDate: "Nov 30, 2022 15:00:00",
       dateRange: "2022/11/30 ~ 2022/12/4",
@@ -46,6 +48,8 @@ export const six = [
     basic: {
       type: "tedx",
       name: "理想麻醉 Dream Paralysis",
+      tag: "麻醉就像一場霧，霧中的我們不斷掙扎於現實與理想間，痛並快樂著。",
+      square: "6th-tedx-square.jpg",
       banner: "6th-tedx-banner.jpg",
       startDate: "May 15, 2022 15:00:00",
       dateRange: "2022/5/15",

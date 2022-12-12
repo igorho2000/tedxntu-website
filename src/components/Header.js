@@ -18,7 +18,13 @@ export default function Header() {
   return (
     <div className="header">
       <LinkTr path="/">
-        <img className="header-logo" src="../nav/TEDx.png" alt="TEDx Logo" />
+        <img
+          className="header-logo"
+          src="../nav/TEDx.png"
+          alt="TEDx Logo"
+          onClick={hide}
+          np
+        />
       </LinkTr>
       <div className="header-burger" onClick={toggleShow}>
         <span
@@ -85,7 +91,7 @@ export default function Header() {
                 <h5>年會</h5>
                 <p>TEDx</p>
               </LinkTr>
-              <LinkTr>
+              <LinkTr path="/event">
                 <h5>列表</h5>
                 <p>All Events</p>
               </LinkTr>

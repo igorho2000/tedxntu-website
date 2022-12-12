@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Event from "./pages/Event";
 
 import { six, seven } from "./content/events";
+import EventList from "./pages/EventList";
 
 function App() {
   const [transition, setTransition] = useState({
@@ -61,6 +62,7 @@ function App() {
                 element={<Event content={event} />}
               />
             ))}
+            <Route path="/event" element={<EventList />} />
           </Routes>
         </div>
         <Footer />
