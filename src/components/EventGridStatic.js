@@ -1,16 +1,18 @@
 import React from "react";
 import "../pages/Event.css";
-import LinkTr from "./LinkTr";
 import TypeTag from "./TypeTag";
 
-export default function EventGrid({ title, content }) {
+export default function EventGridStatic({ title, content }) {
   const output = content.map((event) => (
-    <LinkTr path={event.path} className="event-grid-item">
-      <TypeTag type={event.basic.type} />
-      <h3>{event.basic.name}</h3>
-      <img src={`../event/${event.basic.square}`} alt={event.basic.name} />
-      <p>{event.basic.tag}</p>
-    </LinkTr>
+    <div
+      className="event-grid-item"
+      style={{ boxShadow: "none", backgroundColor: "white" }}
+    >
+      <TypeTag type={event.type} />
+      <h3>{event.name}</h3>
+      <img src={`../event/${event.square}`} alt={event.name} />
+      <p>{event.tag}</p>
+    </div>
   ));
 
   return (

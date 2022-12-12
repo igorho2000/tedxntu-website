@@ -78,7 +78,7 @@ export default function Header() {
           onMouseLeave={() => handleNavClick(0)}
         >
           <div className="header-nav-main">
-            <h4>本屆活動</h4>
+            <h4>參加活動</h4>
             <p>EVENTS</p>
           </div>
           {subNav === 2 && (

@@ -22,6 +22,20 @@ export default function TypeTag({ type }) {
             <span class="material-icons">school</span>&nbsp;工作坊 Workshop
           </p>
         );
+      case "salon":
+        return (
+          <p>
+            <span class="material-icons">question_answer</span>
+            &nbsp;沙龍 Salon
+          </p>
+        );
+      case "pre":
+        return (
+          <p>
+            <span class="material-icons">campaign</span>
+            &nbsp;會前活動 Pre-TEDx Event
+          </p>
+        );
       case "other":
         return (
           <p>
