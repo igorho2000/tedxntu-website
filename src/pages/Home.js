@@ -61,7 +61,7 @@ export default function Home() {
       </div>
       <div className="home-nav">
         <div className="home-nav-item" style={{ backgroundColor: "#84d3d3" }}>
-          <LinkTr className="home-nav-info">
+          <LinkTr className="home-nav-info" path="/about">
             <span class="material-icons">diversity_1</span>
             <p>來認識我們的</p>
             <h3>熱血團隊</h3>

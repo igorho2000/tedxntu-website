@@ -11,6 +11,9 @@ import Event from "./pages/Event";
 
 import { six, seven } from "./content/events";
 import EventList from "./pages/EventList";
+import About from "./pages/About";
+import Team from "./pages/Team";
+import Partner from "./pages/Partner";
 
 function App() {
   const [transition, setTransition] = useState({
@@ -63,6 +66,9 @@ function App() {
               />
             ))}
             <Route path="/event" element={<EventList />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/partner" element={<Partner />} />
           </Routes>
         </div>
         <Footer />

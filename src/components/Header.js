@@ -61,11 +61,11 @@ export default function Header() {
           </div>
           {subNav === 1 && (
             <div className="header-nav-sub" onClick={hide}>
-              <LinkTr path="/hello">
+              <LinkTr path="/about">
                 <h5>社團介紹</h5>
                 <p>Our Club</p>
               </LinkTr>
-              <LinkTr>
+              <LinkTr path="/team">
                 <h5>團隊</h5>
                 <p>Team</p>
               </LinkTr>
@@ -126,7 +126,11 @@ export default function Header() {
         </li>
         <li className="header-nav-item">
           <div onClick={hide}>
-            <LinkTr className="header-nav-main" style={{ transform: "none" }}>
+            <LinkTr
+              className="header-nav-main"
+              style={{ transform: "none" }}
+              path="/partner"
+            >
               <h4>合作夥伴</h4>
               <p>PARTNERS</p>
             </LinkTr>

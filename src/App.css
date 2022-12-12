@@ -51,6 +51,12 @@ h1 {
   row-gap: 2rem;
   margin-top: 1rem;
 }
+.sponsorlist div,
+.sponsorlist a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .guestlist p,
 .sponsorlist p {
   text-align: center;
@@ -61,7 +67,20 @@ h1 {
 }
 .sponsorlist img {
   width: 100%;
+  margin-bottom: 1rem;
 }
+.team-member {
+  padding: 1rem;
+  text-align: center;
+}
+.team-member img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.team-member p {
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   .pagearea {
     width: 80vw;
@@ -73,6 +92,10 @@ h1 {
   .guestlist,
   .sponsorlist {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

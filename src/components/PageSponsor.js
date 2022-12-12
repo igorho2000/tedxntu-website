@@ -3,7 +3,7 @@ import React from "react";
 export default function PageSponsor({ sponsorlist }) {
   const output = sponsorlist.map((sponsor) => (
     <div>
-      <img src={`../event/sponsors/${sponsor}.jpg`} alt={sponsor} />
+      <img src={`../event/sponsors/${sponsor}.png`} alt={sponsor} />
       <p>{sponsor}</p>
     </div>
   ));
