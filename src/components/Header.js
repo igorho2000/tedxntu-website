@@ -109,7 +109,7 @@ export default function Header() {
           </div>
           {subNav === 3 && (
             <div className="header-nav-sub" onClick={hide}>
-              <LinkTr>
+              <LinkTr path="/blog">
                 <h5>部落格</h5>
                 <p>Blog</p>
               </LinkTr>

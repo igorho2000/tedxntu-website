@@ -14,6 +14,7 @@ import EventList from "./pages/EventList";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import Partner from "./pages/Partner";
+import Blog from "./pages/Blog";
 
 function App() {
   const [transition, setTransition] = useState({
@@ -69,6 +70,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Team />} />
             <Route path="/partner" element={<Partner />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </div>
         <Footer />

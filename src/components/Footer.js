@@ -50,13 +50,12 @@ export default function Footer() {
             >
               <img src="../nav/youtube.svg" alt="youtube" />
             </a>
-            <a href="https://tedxntu.medium.com/">
-              <img
-                src="../nav/medium.svg"
-                alt="medium"
-                target="_blank"
-                rel="noreferrer"
-              />
+            <a
+              href="https://tedxntu.medium.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="../nav/medium.svg" alt="medium" />
             </a>
           </div>
         </div>
