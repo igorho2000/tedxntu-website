@@ -42,6 +42,13 @@ export default function TypeTag({ type }) {
             <span class="material-icons">event</span>&nbsp;其他活動 Other Event
           </p>
         );
+      case "monthly":
+        return (
+          <p>
+            <span class="material-icons">newspaper</span>&nbsp;月刊 Monthly
+            Newsletter
+          </p>
+        );
       default:
         return (
           <p>

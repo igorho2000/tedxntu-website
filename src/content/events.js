@@ -39,6 +39,7 @@ export const seven = [
     ],
     guestlist: null,
     sponsorlist: null,
+    video: null,
   },
   {
     path: "workshop1-7th",
@@ -63,6 +64,7 @@ export const seven = [
     ],
     guestlist: null,
     sponsorlist: null,
+    video: null,
   },
 ];
 
@@ -94,6 +96,7 @@ export const six = [
     ],
     guestlist: ["張倞菱", "陳昱築", "王淳", "黃暐程", "劉致昕", "潘瑋翔"],
     sponsorlist: null,
+    video: null,
   },
   {
     path: "pretedx3-6th",
@@ -122,6 +125,7 @@ export const six = [
     ],
     guestlist: ["陳佳愉", "羅信鈞", "吳昕晏", "林源煜", "Evangeline"],
     sponsorlist: null,
+    video: null,
   },
   {
     path: "pretedx2-6th",
@@ -155,6 +159,7 @@ export const six = [
     ],
     guestlist: ["文組吉姆", "過動兒", "大頭禎", "小籠包", "油條"],
     sponsorlist: null,
+    video: null,
   },
   {
     path: "pretedx1-6th",
@@ -194,6 +199,7 @@ export const six = [
       "簡少年",
     ],
     sponsorlist: null,
+    video: null,
   },
   {
     path: "exhibition-6th",
@@ -231,6 +237,7 @@ export const six = [
     ],
     guestlist: null,
     sponsorlist: null,
+    video: null,
   },
 ];
 

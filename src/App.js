@@ -14,6 +14,8 @@ import EventList from "./pages/EventList";
 import About from "./pages/About";
 import Team from "./pages/Team";
 import Partner from "./pages/Partner";
+import BlogList from "./pages/BlogList";
+import { blog } from "./content/blog";
 import Blog from "./pages/Blog";
 
 function App() {
@@ -70,7 +72,13 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Team />} />
             <Route path="/partner" element={<Partner />} />
-            <Route path="/blog" element={<Blog />} />
+            {blog.map((post) => (
+              <Route
+                path={`/blog/${post.basic.path}`}
+                element={<Blog post={post} />}
+              />
+            ))}
+            <Route path="/blog" element={<BlogList />} />
           </Routes>
         </div>
         <Footer />

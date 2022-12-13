@@ -69,6 +69,23 @@ export default function Event({ content }) {
               <p>{item}</p>
             ))}
           </PageTextSection>
+          {content.video !== null && (
+            <PageTextSection title={content.video.title}>
+              <iframe
+                src={content.video.src}
+                width="560"
+                height="314"
+                style={{
+                  border: "none",
+                  overflow: "hidden",
+                  width: "100%",
+                  height: "auto",
+                  aspectRatio: "16 / 9",
+                }}
+                title={content.video.title}
+              ></iframe>
+            </PageTextSection>
+          )}
           {content.guestlist !== null && (
             <PageTextSection title="講者來賓">
               <PageGuest guestlist={content.guestlist} />

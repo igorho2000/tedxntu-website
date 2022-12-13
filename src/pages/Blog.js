@@ -1,23 +1,38 @@
 import React from "react";
 import PageArea from "../components/PageArea";
-import LinkTr from "../components/LinkTr";
+import PageBanner from "../components/PageBanner";
+import PageTextSection from "../components/PageTextSection";
 import TypeTag from "../components/TypeTag";
-import { blog } from "../content/blog";
-import "../pages/Event.css";
 
-export default function Blog() {
+export default function Blog({ post }) {
+  const postSections = post.section;
+  const output = postSections.map((section) => (
+    <PageTextSection title={section.title}>
+      {section.content.map((paragraph) => (
+        <>
+          {paragraph[1] === "#" ? (
+            <p>
+              <strong>{paragraph.slice(2)}</strong>
+            </p>
+          ) : (
+            <p>{paragraph}</p>
+          )}
+          <br />
+        </>
+      ))}
+    </PageTextSection>
+  ));
+
   return (
     <PageArea>
-      <h1>部落格</h1>
+      <TypeTag type={post.basic.type} />
+      <h1>{post.basic.title}</h1>
+      <p>{post.basic.date}</p>
       <br />
-      <div className="event-grid-content">
-        <LinkTr path={`/event/1`} className="event-grid-item blog-item">
-          <TypeTag type="expo" />
-          <h3>厲害專欄</h3>
-          <img src={`../event/6th-expo-square.jpg`} alt={"hi"} />
-          <p>好厲害</p>
-        </LinkTr>
-      </div>
+      <PageBanner src={`../blog/${post.basic.banner}`} />
+      <br />
+      <br />
+      <div>{output}</div>
     </PageArea>
   );
 }
