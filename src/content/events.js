@@ -39,7 +39,10 @@ export const seven = [
     ],
     guestlist: null,
     sponsorlist: null,
-    video: null,
+    video: {
+      title: "籌備紀錄片",
+      src: "https://www.youtube.com/embed/OjwlJbPwgVI",
+    },
   },
   {
     path: "workshop1-7th",
@@ -159,7 +162,10 @@ export const six = [
     ],
     guestlist: ["文組吉姆", "過動兒", "大頭禎", "小籠包", "油條"],
     sponsorlist: null,
-    video: null,
+    video: {
+      title: "活動宣傳片",
+      src: "https://www.youtube.com/embed/q46CKMCShOk",
+    },
   },
   {
     path: "pretedx1-6th",
@@ -237,7 +243,10 @@ export const six = [
     ],
     guestlist: null,
     sponsorlist: null,
-    video: null,
+    video: {
+      title: "籌備紀錄片",
+      src: "https://www.youtube.com/embed/KCkDiDhgj9k",
+    },
   },
 ];
 

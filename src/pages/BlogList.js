@@ -13,6 +13,7 @@ export default function BlogList() {
     >
       <TypeTag type={post.basic.type} />
       <h3>{post.basic.title}</h3>
+      <p>{post.basic.date}</p>
       <img src={`../blog/${post.basic.square}`} alt={post.basic.title} />
       <p>{post.basic.tag}</p>
     </LinkTr>

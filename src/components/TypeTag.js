@@ -49,6 +49,12 @@ export default function TypeTag({ type }) {
             Newsletter
           </p>
         );
+      case "view":
+        return (
+          <p>
+            <span class="material-icons">preview</span>&nbsp;雙週週刊 TEDView
+          </p>
+        );
       default:
         return (
           <p>
