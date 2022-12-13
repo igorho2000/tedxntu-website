@@ -16,7 +16,7 @@ export default function Home() {
         ...state,
         main: array,
       }));
-      console.log("i");
+      console.log("Easter Egg: Created by Igor Ho. Visit www.projectonepremium.com to view my work and contact me for your very own showstopper website.");
       if (array === null) {
         clearInterval(x);
       }
