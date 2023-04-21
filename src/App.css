@@ -80,6 +80,18 @@ h1 {
 .team-member p {
   text-align: center;
 }
+.team-phototext {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.team-phototext a {
+  transition: color 0.3s, text-decoration 0.3s;
+  font-weight: 600;
+}
+.team-phototext a:hover {
+  color: rgb(213, 181, 0);
+}
 
 @media only screen and (min-width: 768px) {
   .pagearea {

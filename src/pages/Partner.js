@@ -11,10 +11,19 @@ export default function Partner() {
       <PageTextSection title="贊助廠商">
         <PageSponsor
           sponsorlist={[
-            "Let's Design 來做設計",
-            "米樂繽紛爆米花",
-            "經典數位印刷",
-            "順易利口罩",
+            "好時有影 Golden Years",
+            "波波諾諾 bobonono",
+            "華南銀行",
+            "馳綠 22 製夢所",
+            "璣園 Don Du Ciel",
+            "禮心手製蛋捲",
+            "FUcoi 藻安美肌",
+            "HAO CAFFE",
+            "Skyline Film 屋頂電影院",
+            // "Let's Design 來做設計",
+            // "米樂繽紛爆米花",
+            // "經典數位印刷",
+            // "順易利口罩",
           ]}
         ></PageSponsor>
       </PageTextSection>

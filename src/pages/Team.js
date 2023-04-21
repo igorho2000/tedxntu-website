@@ -25,15 +25,35 @@ export default function Team() {
       <br />
       <PageTextSection title="召部">
         <div className="team">{presidentOutput}</div>
+        <p className="team-phototext">
+          攝影：
+          <a
+            href="https://www.goldenyearsphoto.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            好時有影 Golden Years Studio
+          </a>
+        </p>
       </PageTextSection>
       <PageTextSection title="各部門">
         <div className="team">{directorOutput}</div>
+        <p className="team-phototext">
+          攝影：
+          <a
+            href="https://www.goldenyearsphoto.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            好時有影 Golden Years Studio
+          </a>
+        </p>
       </PageTextSection>
       <PageTextSection title="顧問">
         <div className="team">
           <div className="team-member">
             <img src="../team/何紹宇 Igor.jpg" alt="何紹宇 Igor" />
-            <h3>英語暨資訊顧問</h3>
+            <h3>網站維護</h3>
             <p>何紹宇 Igor</p>
           </div>
         </div>
